@@ -1,0 +1,37 @@
+RunMode = "release"
+
+[btcCore]
+    [btcCore.dev]
+    rpcHost = "127.0.0.1"
+    rpcPort = "18443"
+    rpcUser = "utxo"
+    rpcPasswd = "utxo"
+    confirmNum = 6
+    StartBlock = 5
+    [btcCore.release]
+    rpcHost = "127.0.0.1"
+    rpcPort = "8332"
+    rpcUser = "utxo"
+    rpcPasswd = "UTXO_8ak1gI25KFTvjovL3gAM967mies3E="
+    confirmNum = 6
+    StartBlock = 560977
+
+[psql]
+    [psql.dev]
+    host = "127.0.0.1"
+    port = "5432"
+    db = "utxo"
+    user = "utxo"
+    passwd = "utxo"
+    [psql.release]
+    host = "127.0.0.1"
+    port = "5432"
+    db = "utxo"
+    user = "utxo"
+    passwd = "utxo"
+
+[email]
+    SmtpServer = "smtp.exmail.qq.com"
+    SmtpPasswd = "yunyoudao11"
+    SenderEmail = "noreply@tratao.com"
+    ReceiveEmails = ["jm@tratao.com"]#"zacks@tratao.com"
