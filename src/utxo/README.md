@@ -32,3 +32,5 @@ get txs by 当前记录区块
 insert Addresses to db_table : xcurrency_address 
 config start block_height
 go run main.go release
+
+# transfer can not be here
