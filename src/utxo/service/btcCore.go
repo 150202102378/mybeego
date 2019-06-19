@@ -43,13 +43,13 @@ func (c *BTCCore) updatePointBlock() {
 	c.PointBlock = block.Height + 1
 }
 
-func (c *BTCCore) iniLastBlock() {
+func (c *BTCCore) iniLastBlock() { //name ？？？
 	ok, result := CallRPC("getblockchaininfo", []string{})
 	if !ok {
 		log.Fatal("init BTCCore Error: cannot init LastBlock")
 		os.Exit(3)
 	}
-	blocks := result.(map[string]interface{})["blocks"] //???
+	blocks := result.(map[string]interface{})["blocks"]
 	c.LatestBlock = int64(blocks.(float64))
 }
 
