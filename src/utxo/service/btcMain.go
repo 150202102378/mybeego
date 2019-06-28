@@ -70,7 +70,6 @@ func (c *BTCCore) Tally() {
 }
 
 //Transfer recording transfer
-//Transfer应该加入到build上
 func (c *BTCCore) Transfer() {
 	//get all the addr that confirms > 0.8
 	ok, addrs := dao.GetAddrByConfirm(0.8)
